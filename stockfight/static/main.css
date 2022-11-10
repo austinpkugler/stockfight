@@ -16,7 +16,17 @@ body {
   -moz-text-fill-color: transparent;
 }
 
+.nav a:hover {
+  background-color: #cbcbcb;
+  color: #181a1b;
+}
+
 .nav-text {
   font-size: 1.5em;
-  color: #ffffff;
+  color: #cbcbcb;
+}
+
+.nav-text-active {
+  background-color: #cbcbcb;
+  color: #181a1b;
 }
