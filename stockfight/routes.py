@@ -1,6 +1,8 @@
+from flask import render_template
+
 from stockfight import app
 
 
 @app.route('/')
 def home():
-    return '<h1>Home</h1>'
+    return render_template('home.html')
