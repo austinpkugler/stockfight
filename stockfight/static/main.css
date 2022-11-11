@@ -16,6 +16,26 @@ body {
   -moz-text-fill-color: transparent;
 }
 
+.stockfight-text-lg {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 4em;
+  background-color: #ffffff;
+  background-image: linear-gradient(45deg, #118a06 60%, #a51b1b 40%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.headline-text {
+  font-size: 1.75em;
+  color: #cbcbcb;
+  margin-bottom: 1em;
+}
+
 .nav a:hover {
   background-color: #cbcbcb;
   color: #181a1b;
@@ -24,9 +44,35 @@ body {
 .nav-text {
   font-size: 1.5em;
   color: #cbcbcb;
+  background-color: #181a1b;
 }
 
 .nav-text-active {
   background-color: #cbcbcb;
   color: #181a1b;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home::before {
+  content: "";
+  background-image: url("../static/img/stock_market.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.home-content {
+  margin-top: 20%;
+  position: relative;
 }

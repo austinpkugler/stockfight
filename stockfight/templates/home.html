@@ -1,7 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>
-    Welcome!
-  </h1>
+<div class="home">
+  <div class="home-content">
+    <div class="d-flex">
+      <a class="stockfight-text-lg h1" href="{{ url_for('home') }}">stockfight</a>
+    </div>
+    <h2 class="headline-text">Challenge others to a stock 1v1—may the best alpha win!</h2>
+    <ul class="nav nav-pills nav-justified">
+      <li class="nav-item mr-2">
+        <a class="nav-link nav-text" href="{{ url_for('sign_in') }}">Sign In</a>
+      </li>
+      <li class="nav-item ml-2">
+        <a class="nav-link nav-text" href="{{ url_for('sign_up') }}">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+</div>
 {% endblock %}

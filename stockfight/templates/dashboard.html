@@ -2,8 +2,9 @@
 {% extends "base.html" %}
 
 {% block content %}
+<main role="main" class="container">
   <div class="d-flex justify-content-center">
-    <h1 class="stockfight-text">stockfight</h1>
+    <a class="stockfight-text h1" href="{{ url_for('home') }}">stockfight</a>
   </div>
   <ul class="nav nav-pills nav-justified">
     <li class="nav-item">
@@ -16,4 +17,5 @@
       <a class="nav-link nav-text" href="{{ url_for('leaderboard') }}">Leaderboard</a>
     </li>
   </ul>
+</main>
 {% endblock %}

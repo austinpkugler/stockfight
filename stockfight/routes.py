@@ -21,3 +21,13 @@ def dashboard():
 @app.route('/leaderboard/')
 def leaderboard():
     return render_template('leaderboard.html')
+
+
+@app.route('/sign-up')
+def sign_up():
+    return render_template('forms/sign-up.html')
+
+
+@app.route('/sign-in')
+def sign_in():
+    return render_template('forms/sign-in.html')
