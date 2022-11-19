@@ -75,4 +75,28 @@ body {
 .home-content {
   margin-top: 20%;
   position: relative;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.text-green {
+  color: #118a06;
+}
+
+.text-light {
+  color: #cbcbcb;
+}
+
+.btn-green {
+  color: #118a06;
+  border-color: #118a06;
+}
+
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus,
+.btn-green:visited {
+  color: #118a06;
+  border-color: #118a06;
+  background-color: #cbcbcb;
 }
